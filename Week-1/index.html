@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Time Table</title>
+    <style>
+        body{
+            background-image: url('mitimg (2).png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .head{
+            margin-left: 5%;   
+        }
+        .sem{
+            float: left;
+            width: 33.33%;
+        }
+        .lh{
+            float: left;
+            width: 33.33%;
+            text-align: center;
+        }
+        .date{
+            float: left;
+            width: 33.33%;
+            text-align: center;
+        }
+        table, th, td {
+            border: 1px solid #0094c6;
+            text-align: center;
+            padding: 20px;
+            font-size: large;
+            font-weight: 800;
+            border-radius: 10px;
+        }
+        table{
+            margin-left: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <img src="Manipal_University_logo.png" alt="" style="padding-left: 800px; height: 80px;">
+        <h3 style="font-size:xx-large; font-weight:bolder; text-align:center; color:#ffd400; margin-top: 40px;">Department of <span style="color:#b84a62 ;">Data Science and <span style="color: #fa8334;"> Computer Applications</span></span></h3>
+        <h4 style="font-size: 25px; color: darkblue;">Time-Table: JUL - DEC 2022</h4>
+        <div class="table-top">
+            <div class="sem">
+                <h4 style="font-size: 22px; color: #512d38;">Semester & Section: V SEM B.Tech(A)</h4>
+            </div>
+            <div class="lh">
+                <h4 style="font-size: 22px; color: #f4bfdb;">Lecture Hall: AB5 205</h4>
+            </div>
+            <div class="date">
+                <h4 style="font-size: 22px; color: #512d38;">Effective from: 25/07/2022</h4>
+            </div>
+        </div>
+    </div>
+        <table style="width:90%">
+            <tr>
+              <th style="font-size:x-large;">Days</th>
+              <th style="color: #0094c6;">8:30 - 9:00</th>
+              <th style="color: #0094c6;">9:00 - 10:00</th>
+              <th style="color: #0094c6;">10:00 - 10:30</th>
+              <th style="color: #0094c6;">10:30 - 11:30</th>
+              <th style="color: #0094c6;">11:30 - 12:30</th>
+              <th style="color: #0094c6;">12:30 - 1:00</th>
+              <th style="color: #0094c6;">1:00 - 2:00</th>
+              <th style="color: #0094c6;">2:00 - 3:00</th>
+              <th style="color: #0094c6;">3:00 - 3:30</th>
+              <th style="color: #0094c6;">3:30 - 4:30</th>
+              <th style="color: #0094c6;">4:30 - 5:00</th>
+            </tr>
+            <tr>
+              <td style="color: #ffd400;">Monday</td>
+              <td></td>
+              <td style="color: #f5e663;">MFDS</td>
+              <td style="color: #5d737e;">Break</td>
+              <td style="color: #c03221;">DL</td>
+              <td style="color: #61f2c2">NLP</td>
+              <td colspan="2" style="color: #5d737e;">Lunch_break</td>
+              <td colspan="4" style="color: #c03221;"> <------DL Lab Batch 2------> </td>
+            </tr>
+            <tr>
+                <td style="color: #ffd400;">Tuesday</td>
+                <td colspan="4" style="color: #f1f5f2;"> <------WT Lab Batch 1------> </td>
+                <td colspan="2" style="color: #5d737e;">Lunch_break</td>
+                <td>-----</td>
+                <td style="color: #fa8334;">CC</td>
+                <td style="color: #5d737e;">Break</td>
+                <td style="color: #7cfef0">OS</td>
+            </tr>
+            <tr>
+                <td style="color: #ffd400;">Wednesday</td>
+                <td></td>
+                <td style="color: #61f2c2">NLP</td>
+                <td style="color: #5d737e;">Break</td>
+                <td style="color: #fa8334;">CC</td>
+                <td>-----</td>
+                <td colspan="2" style="color: #5d737e;">Lunch_break</td>
+                <td colspan="4" style="color: #f1f5f2;"> <------WT Lab Batch 2------> </td>
+            </tr>
+            <tr>
+                <td style="color: #ffd400;">Thursday</td>
+                <td colspan="4" style="color: #7cfef0"> <------OS Lab Batch 2------> </td>
+                <td colspan="2" style="color: #5d737e;">Lunch_break</td>
+                <td style="color: #c03221;">DL</td>
+                <td style="color: #f5e663;">MFDS</td>
+                <td style="color: #5d737e;">Break</td>
+                <td style="color: #7cfef0">OS</td>
+            </tr>
+            <tr>
+                <td style="color: #ffd400;">Friday</td>
+                <td>------</td>
+                <td style="color: #fa8334;">CC</td>
+                <td style="color: #5d737e;">Break</td>
+                <td style="color: #c03221;">DL</td>
+                <td style="color: #f5e663;">MFDS</td>
+                <td colspan="2" style="color: #5d737e;">Lunch_break</td>
+                <td colspan="4" style="color: #7cfef0"> <------OS Lab Batch 1------> </td>
+            </tr>
+            <tr>
+                <td style="color: #ffd400;">Saturday</td>
+                <td colspan="4" style="color: #c03221;"> <------DL Lab Batch 1------> </td>
+                <td colspan="2" style="color: #5d737e;">Lunch_break</td>
+                <td style="color: #7cfef0">OS</td>
+                <td style="color: #61f2c2">NLP</td>
+                <td style="color: #5d737e;">Break</td>
+                <td style="color: #c03221;">DL</td>
+            </tr>
+        </table>
+</body>
+</html>

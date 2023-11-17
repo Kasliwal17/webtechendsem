@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: antiquewhite;
+            background-color: #000000;
+        }
+
+        .wrapper {
+            border: 3px solid rgb(255, 255, 255);
+            width: 70%;
+            margin: 4rem auto;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .first-section {
+            display: flex;
+        }
+
+        .profile-image img {
+            height: 10rem;
+            margin-right: 1rem;
+        }
+
+        .profile-name {
+            font-size: 1.6rem;
+            font-weight: 1000;
+            margin: 0.5rem;
+
+        }
+
+        .profile-designation {
+            font-size: 1.3rem;
+            margin: 0.5rem 0.5rem 0rem 0.5rem;
+        }
+
+        .contact_id-address,
+        .contact_id-email,
+        .contact_id-phnumber,
+        .contact_id-website,
+        .contact_id-github .contact_id-linkedin {
+            display: flex;
+            padding: 2px;
+        }
+
+        .contact_id-address-logo,
+        .contact_id-email-logo,
+        .contact_id-phnumber-logo,
+        .contact_id-website-logo,
+        .contact_id-github-logo,
+        .contact_id-linkedin-logo,
+        .contact_id-logo img {
+            height: 1rem;
+            margin-left: 2px;
+        }
+
+        .second-section {
+            margin: 4rem 0rem;
+
+        }
+
+        .objective {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .objective-heading {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0rem 1.5rem;
+        }
+
+        .section_2_subsection {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 2rem 0rem;
+        }
+
+        .section_2_subsection-heading {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0rem 1.5rem;
+        }
+
+        .section_2_content {
+            display: flex;
+            margin: 1.3rem;
+        }
+
+        .section_2_content_item_year {
+            margin: 0 2rem;
+        }
+
+        .section_2_content_item_skills_heading {
+            margin: 0 2rem;
+            font-weight: bold;
+        }
+
+        .section_2_content_items {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+        .section_2_content_item_name {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="first-section">
+            <div class="profile-image">
+                <img src="person_blue-modified.png" alt="">
+            </div>
+            <div class="profile-details">
+                <div class="profile-name">Pratinav Seth</div>
+                <div class="profile-designation">Data Scientist</div>
+
+                <br>
+                <div class="profile-contact_id-detials">
+                    <div class="contact_id-address">
+                        <img src="home.png" alt="" class="contact_id-address-logo">Manipal,India
+                    </div>
+                    <div class="contact_id-email">
+                        <img src="email.jpg" alt="" class="contact_id-email-logo"><a
+                            href="mailto:seth.pratinav@gmail.com">seth.pratinav@gmail.com</a>
+                    </div>
+
+                    <div class="contact_id-phnumber">
+                        <img src="phone.jpg" alt="" class="contact_id-phnumber-logo">+91-8444008665
+                    </div>
+
+                    <div class="contact_id-website">
+                        <img src="website.webp" alt="" class="contact_id-website-logo"><a
+                            href="www.w3schoold.com">Website</a>
+                    </div>
+                    <div class="contact_id-github">
+                        <img src="github.png" alt="" class="contact_id-github-logo"><a
+                            href="www.w3schoold.com">Github</a>
+                    </div>
+                    <div class="contact_id-linkedin">
+                        <img src="linkedin (2).png" alt="" class="contact_id-linkedin-logo"><a
+                            href="www.w3schoold.com">Linkedin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-section">
+            <div class="objective">
+                <div class="objective-heading">OBJECTIVE</div>
+                <div class="objective-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+            </div>
+            
+            <div class="section_2_subsection">
+                <div class="section_2_subsection-heading">WORK EXPERIENCE</div>
+                <div class="section_2_content">
+                    <div class="section_2_content_item_year">May 2022 - Aug. 2022</div>
+                    <div class="section_2_content_items">
+                        <div class="section_2_content_item_name">IIT Kharagpur, India</div>
+                        <div class="section_2_content_position">Research Intern</div>
+                    </div>
+                </div>
+                <div class="section_2_content">
+                    <div class="section_2_content_item_year">Mar. 2020 - May 2022</div>
+                    <div class="section_2_content_items">
+                        <div class="section_2_content_item_name">Eedge.ai</div>
+                        <div class="section_2_content_position">Machine Learning Intern</div>
+                    </div>
+                </div>
+                <div class="section_2_content">
+                    <div class="section_2_content_item_year">Jan. 2022 - Feb. 2022</div>
+                    <div class="section_2_content_items">
+                        <div class="section_2_content_item_name">CUREYA</div>
+                        <div class="section_2_content_position">Data Science (NLP) Intern</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_2_subsection">
+                <div class="section_2_subsection-heading">SKILLS</div>
+                <div class="section_2_content">
+                    <div class="section_2_content_item_skills_heading">Language</div>
+                    <div class="section_2_content_position">C,C++,Java,Python,JavaScript,Latex</div>
+                </div>
+                <div class="section_2_content">
+                    <div class="section_2_content_item_skills_heading">Frameworks</div>
+                    <div class="section_2_content_position">ABC</div>
+                </div>
+                <div class="section_2_content">
+                    <div class="section_2_content_item_skills_heading">Libraries</div>
+                    <div class="section_2_content_position">C,Latex</div>
+                </div>
+                <div class="section_2_content">
+                    <div class="section_2_content_item_skills_heading">Misc.</div>
+                    <div class="section_2_content_position">Excel,Latex</div>
+                </div>
+            </div>
+            <div class="section_2_subsection">
+                <div class="section_2_subsection-heading">PROJECTS</div>
+                <ul>
+                    <li>
+                        <div class="section_2_content">
+                            <div class="section_2_content_items">
+                                <div class="section_2_content_item_name">Movie Recommendation Engine</div>
+                                <div class="section_2_content_position">Designed a Movie Recommendation Engine using content and collaborative filtering based on user and item
+                                    similarity while incorporating solution of cold start problem.Deployed it into a app using Streamlit and fastApi.</div>
+                            </div>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="section_2_content">
+                            <div class="section_2_content_items">
+                                <div class="section_2_content_item_name">Customer Segmentation and Visulization using RFM Analysis</div>
+                                <div class="section_2_content_position">Clustering of Customers into different Groups and Visualization using RFM analysis by using K-Means and
+                                    Agglomerative Clustering Algorithms.</div>
+                            </div>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="section_2_content">
+                            <div class="section_2_content_items">
+                                <div class="section_2_content_item_name">Musculoskeletal Radiographs Abnormality Detection </div>
+                                <div class="section_2_content_position">Musculoskeletal Radiographs Abnormality Detection in various body parts by use of various Deep Learning
+                                    models and ensemble predictions using Stanford MURA dataset</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="section_2_subsection">
+                <div class="section_2_subsection-heading">EDUCATION</div>
+                <div class="section_2_content">
+                    <div class="section_2_content_item_year">Nov. 2020 - Jul. 2024</div>
+                    <div class="section_2_content_items">
+                        <div class="section_2_content_item_name">Manipal Institute of Technology, Manipal, India</div>
+                        <div class="section_2_content_position">B.Tech Data Science and Engineering - CGPA - 8.65/10
+                        </div>
+                    </div>
+                </div>
+                <div class="section_2_content">
+                    <div class="section_2_content_item_year">Apr. 2006- Mar. 2020</div>
+                    <div class="section_2_content_items">
+                        <div class="section_2_content_item_name">Bhavans G.K. Vidyamandir , Kolkata , India</div>
+                        <div class="section_2_content_position">Senior School Certificate - Science </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_2_subsection">
+                <div class="section_2_subsection-heading">ACHIEVEMENTS</div>
+                <ul><li><div class="section_2_content">
+                    <div class="section_2_content_items">
+                        <div class="section_2_content_item_name">Placed among Top 10 teams out of 1000 submissions in Bajaj Finserv HackRx3.0 Hackathon: June 2022</div>
+                    </div>
+                </div></li></ul>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

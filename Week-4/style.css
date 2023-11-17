@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'DynaPuff', cursive;
+    background-color: rgb(255, 166, 0);*/
+    color: white;
+
+}
+
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assests/backg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+img {
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+}
+
+.container {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-image {
+    padding: 2rem;
+    margin: 1rem;
+    align-items: center;
+}
+.heading {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.photoGalleryButton a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 1.3rem 1.7rem;
+    border-radius: 0.5rem;
+    border-color: rgb(0, 0, 0);
+    background-color: rgba(77, 0, 201, 0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+.photoGalleryButton {
+    margin: 3rem;
+    border-color: black;
+}
+
+.photoGalleryButton a:hover {
+    background-color: rgb(193, 198, 248);
+    color: black;
+    text-decoration: underline;
+}

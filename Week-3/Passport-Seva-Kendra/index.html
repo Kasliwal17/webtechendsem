@@ -1,0 +1,312 @@
+<html>
+
+<head>
+    <title>
+        Passport Seva Kendra
+    </title>
+    <script type="text/javascript" src="logic.js"></script>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+
+
+        }
+
+        .capt {
+            background-color: grey;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin: 0px;
+
+        }
+
+        #mainCaptcha {
+            position: relative;
+            left: 5px;
+
+        }
+
+        #refresh {
+            position: relative;
+            height: 35px;
+            width: 35px;
+            background-image: url(assets/refresh.png);
+        }
+
+        #txtInput {
+            position: relative;
+            left: 0px;
+        }
+
+        .webpage_header_P1 {
+            font-size: xx-large;
+            color: rgb(250, 250, 250);
+            font-weight: bold;
+        }
+
+        .webpage_header_P2 {
+            font-size: small;
+            color: rgb(250, 250, 250);
+            font-weight: bold;
+        }
+
+        .webpage_header_P3 {
+            font-size: smaller;
+            color: rgb(250, 250, 250);
+            font-weight: bold;
+        }
+
+        .webpage_Body_P1 {
+            font-size: x-large;
+            color: rgb(8, 71, 209);
+            font-weight: bold;
+        }
+
+        .webpage_Body_P2 {
+            font-size: small;
+            color: #000000;
+        }
+
+        .webpage_header_banner {
+            background-color: rgb(6, 1, 81);
+            padding-left: 20px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body onload="Captcha();">
+    <div class="webpage_header_banner">
+        <img src="assets/Capture2.JPG" style="display:inline;">
+        <div class="webpage_header_P1">
+            Passport Seva
+        </div>
+        <div class="webpage_header_P2">
+            PSP Division
+        </div>
+        <div class="webpage_header_P3">
+            Ministry of External Affairs, Government of India
+        </div>
+    </div>
+    <div style="padding-left: 20px">
+        <div class="webpage_Body_P1">
+            User Registration
+        </div>
+        <div class="webpage_Body_P2">
+            Important Information:
+            <br>
+            Passport application can be processed at any PSK/POPSK/PSLK WITHIN INDIA irrespective of
+            your residential address.
+        </div>
+        <div class="webpage_Body_P2">
+            <a href="">Click here</a> to check the appointment availability at all PSK/POPSK/PSLK.
+        </div>
+        <div class="webpage_Body_P2">
+            <a href="">Click here</a> to know more about Apply Anywhere in India scheme for Passport Services.
+        </div>
+        <div class="webpage_Body_P2" style="color:#FF0000 ;">
+            Fields marked with asterisk (*) are mandatory
+        </div>
+    </div>
+    <br>
+    <div style="padding: 20px; margin: 5px;">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Register to apply at<font color='red'>*</font>
+                    </td>
+                    <td>
+                        <div class="Register_apply_at-radio" style="align-items:flex-end">
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">CPV Delhi</label><br>
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                            <label for="css">Passport Office
+                            </label><br>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="webpage_Body_P2">Select the 'CPV Delhi' option to apply for Diplomatic/Official
+                            passport at Consular, Passport and
+                            Visa (CPV) division, Delhi.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Passport Office<font color='red'>*</font>
+                    </td>
+                    <td>
+                        <select name="select_office">
+                            <option value="None">-----Select-----</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Amritsar">Amritsar</option>
+                            <option value="Bareilly">Bareilly</option>
+                            <option value="Bengaluru">Bengaluru</option>
+                            <option value="Bhopal">Bhopal</option>
+                            <option value="Bhuwaneshwar">Bhuwaneshwar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Cochin">Cochin</option>
+                            <option value="Coimbatore">Coimbatore</option>
+                            <option value="Dehradun">Dehradun</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Ghaziabad">Ghaziabad</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Guwahati">Guwahati</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Jalandhar">Jalandhar</option>
+                            <option value="Jammu">Jammu</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Khozikhode">Khozikhode</option>
+                            <option value="Lucknow">Lucknow</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div class="webpage_Body_P2">Tibetan Refugees applying for Identity Certificate must register
+                            with
+                            'Delhi' Passport Office.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Given name<font color='red'>*</font>
+                    </td>
+                    <td>
+                        <input type="text" id="Name_placeholder" onchange='saveValue(this);'>
+                    </td>
+                    <td>
+                        <div class="webpage_Body_P2">First Name + Middle Name Initials and honorifics (e.g.
+                            Dr.,Col.,etc.)
+                            are not allowed</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Surname<font color='red'>*</font>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        DOB<font color='red'>*</font>
+                    </td>
+                    <td>
+                        <input type="date" id="Date_holder" onchange='saveValue(this);'>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        E-mail Id<font color='red'>*</font>:
+                    </td>
+                    <td>
+                        <input type="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Do you want your Login Id to be same as E-mail Id?
+                    </td>
+                    <td>
+                        <div class="Register_apply_at-radio" style="align-items:flex-end">
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">Yes</label><br>
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                            <label for="css">No</label><br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Login Id<font color='red'>*</font>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>Check Availability</td>
+                </tr>
+                <tr>
+                    <td>
+                        Password<font color='red'>*</font>
+                    </td>
+                    <td>
+                        <input type="password">
+                    </td>
+                    <td><a href="https://portal2.passportindia.gov.in/AppOnlineProject/onlineHtml/passwordPolicy.html">Password
+                            Policy</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        Confirm Password<font color='red'>*</font>
+                    </td>
+                    <td>
+                        <input type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hint Question<font color='red'>*</font>
+                    </td>
+                    <td>
+                        <select name="Hint" id="Hint_question">
+                            <option value="None">-----Select-----</option>
+                            <option value="Birth City">Birth City</option>
+                            <option value="Favourite_Colour">Favourite Colour</option>
+                            <option value="Favourite Cricketer">Favourite Cricketer</option>
+                            <option value="Favourite Food">Favourite Food</option>
+                            <option value="First School">First School</option>
+                            <option value="Make of First Car Owned">Make of First Car Owned</option>
+                            <option value="Mother's Maiden Name">Mother's Maiden Name</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hint Answer<font color='red'>*</font>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        CAPTCHA<font color='red'>*</font>
+                    </td>
+                    <td>
+                        <div class="capt">
+                            <h2 type="text" id="mainCaptcha"></h2>
+                            <input type="text" id="txtInput" />
+                        </div>
+                    </td>
+
+                    <td><input type="button" id="refresh" onclick="Captcha();"></input><br>
+                        <img src="assets/audio.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input id="submit" type="button" value="Register" onclick="alert(ValidCaptcha());"
+                                        style="border: solid rgb(62, 150, 250); background-color: rgb(62, 150, 250);" />
+                                </td>
+                                <td>
+                                    <button id="clear"
+                                        style="border: solid rgb(62, 150, 250); background-color: rgb(62, 150, 250);">Clear</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

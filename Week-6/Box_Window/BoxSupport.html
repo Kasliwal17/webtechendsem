@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Boxes Supported in Javascript</title>
+    <style>
+        body {
+            margin-top: 80px;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: aliceblue;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .syntax {
+            color: red;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Boxes Supported in Javascript</h1>
+    <hr>
+    <ul>
+        <li>
+            <h2>Alert Box</h2>
+            <p>
+                An alert box is often used if you want to make surew information comes
+                through to the user. When an alert box pops up, the user will have to click
+                "OK" to proceed.
+            </p>
+            <h3>Syntax:</h3>
+            <p class="syntax">window.alert("sometext")</p>
+            <button onclick="myFunctionalert()">Try it</button>
+        </li>
+        <li>
+            <h2>Confirm Box</h2>
+            <p>
+                A confirm box is often used if you want the user to verify or accept something.
+                When a confirm box pops up, the user will have to click either "OK" or "Cancel"
+                to proceed. If the user clicks "OK", then box returns true. If the user clicks
+                "Cancel", the box returns false.
+            </p>
+            <h3>Syntax:</h3>
+            <p class="syntax">window.confirm("sometext")</p>
+            <button onclick="myFunctionconfirm()">Try it</button>
+        </li>
+        <li>
+            <h2>Prompt Box</h2>
+            <p>
+                A prompt box is often used if you want the user to input a value before entering
+                a page. When a prompt box pops up, the user will have to clock either "OK" or "Cancel"
+                to proceed after entering an input value. If the user clicks "OK" the box returns the
+                input value. If the user clicks "Cancel" the box returns null.
+            </p>
+            <h3>Syntax:</h3>
+            <p class="syntax">window.prompt("sometext", "defaultText")</p>
+            <button onclick="myFunctionprompt()">Try it</button>
+        </li>
+    </ul>
+    <script>
+        function myFunctionalert() {
+            alert("I am an alert box!");
+        }
+        function myFunctionprompt() {
+            let text;
+            let person = prompt("Please enter your name:", "Harry Potter");
+            if (person == null || person == "") {
+                text = "User cancelled the prompt.";
+            } else {
+                text = "Hello " + person + "! How are you today?";
+            }
+            document.getElementById("demo").innerHTML = text;
+
+        }
+        function myFunctionconfirm() {
+            var txt;
+            if (confirm("Press a button!")) {
+                txt = "You pressed OK!";
+            } else {
+                txt = "You pressed Cancel!";
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+</body>
+
+</html>

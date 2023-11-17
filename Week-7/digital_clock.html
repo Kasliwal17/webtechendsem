@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Digital Clock</title>
+    <style>
+        body {
+            margin-top: 80px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .clock {
+            border: 10px dotted black;
+            margin-top: 100px;
+            height: 200px;
+            font-size: 200px;
+            padding-left: 20px;
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Digital Clock</h1>
+    <hr>
+    <div class="clock" id="time">
+        00:00:00
+    </div>
+    <script>
+        setInterval(currTime, 1000);
+        function currTime() {
+            let dateObj = new Date();
+            let hh = dateObj.getHours();
+            let mm = dateObj.getMinutes();
+            let ss = dateObj.getSeconds();
+
+            if (hh < 10) {
+                hh = "0" + hh;
+            }
+            if (mm < 10) {
+                mm = "0" + mm;
+            }
+            if (ss < 10) {
+                ss = "0" + ss;
+            }
+
+            let time = hh + ":" + mm + ":" + ss;
+
+            document.getElementById("time").innerHTML = time;
+        }
+        currTime();
+    </script>
+</body>
+
+</html>

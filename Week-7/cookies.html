@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Program using Cookies</title>
+    <style>
+        body {
+            margin-top: 80px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            height: 80px;
+            width: 400px;
+            border: 2px solid green;
+        }
+    </style>
+    <script>
+        function setCookie(cookie_name, cookie_value) {
+            document.cookie = cookie_name + "=" + cookie_value;
+        }
+        function getCookie(cookie_name) {
+            let decoded_cookie = decodeURIComponent(document.cookie);
+            let name = cookie_name + "=";
+            return decoded_cookie.substring(name.length, decoded_cookie.length);
+        }
+        function checkCookie() {
+            let currValue = getCookie("visitor");
+            // let arr = currValue.split('=');
+            // let len = arr.length;
+            // if (len > 1) currValue = arr[1];
+            // else currValue = "";
+            if (currValue != "") {
+                window.alert("Hi again " + currValue);
+            } else {
+                user = window.prompt("Please enter your visitor name:");
+                if (user != null && user != "") {
+                    setCookie("visitor", user);
+                } else {
+                    setCookie("visitor", "Anonymous");
+                }
+            }
+        }
+    </script>
+</head>
+
+<body onload="checkCookie();">
+    <div class="container">
+        <h1>Cookies</h1>
+    </div>
+
+</body>
+
+</html>

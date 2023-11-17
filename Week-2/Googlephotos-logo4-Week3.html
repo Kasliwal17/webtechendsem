@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+  padding: 60px 80px;
+}
+.leaf{
+  height: 50px;
+  width: 100px;
+  background-color: #fae903;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+}
+
+.leaf::after{
+  position: absolute;
+  content: "";
+  height: 100px;
+  width: 50px;
+  background-color: #e22413;
+  left: 100px;
+  top: -50px;
+  border-radius: 0 50px 50px 0;
+}
+
+.mirror{
+  transform: rotateZ(180deg);
+  left: 100px;
+  background-color: #005af5;
+}
+
+.mirror::after{
+  
+  background-color: #09e848;
+}
+    </style>
+
+</head>
+<body>
+    <div class="container" align="center">
+        <div class="leaf"></div>
+        <div class="leaf mirror"></div>
+      </div>
+</body>
+</html>

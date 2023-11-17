@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mouse Coordinates</title>
+    <style>
+        body {
+            margin-top: 80px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .area {
+            height: 600px;
+            width: 600px;
+            border: 2px solid black;
+        }
+
+        .area:hover {
+            border: 2px solid red;
+        }
+
+        .co-od {
+            font-size: 25px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mouse Coordinates</h1>
+    <hr>
+    <div class="area" onmousemove="getCoordinates(event)">
+    </div>
+    <div id="co-od" class="co-od">Mouse Co-ordinates:</div>
+    <script>
+        const defText = "Mouse Co-ordinates: ";
+        function getCoordinates(event) {
+            var x = event.clientX;
+            var y = event.clientY;
+            let cood = x + "X, " + y + "Y";
+            let text = defText + cood;
+            document.getElementById("co-od").innerHTML = text;
+        }
+        function clearCoor() {
+            document.getElementById("co-od").innerHTML = defText;
+        }
+    </script>
+</body>
+
+</html>
